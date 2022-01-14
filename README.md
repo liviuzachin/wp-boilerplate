@@ -67,10 +67,11 @@ Much of the philosophy behind Bedrock is inspired by the [Twelve-Factor App](htt
 
 ## Installation
 
-1. Create a new project:
+1. Open the project in the terminal and type:
    ```sh
-   $ composer create-project roots/bedrock
+   $ composer install
    ```
+   This will install all the core dependencies like Wordpress
 2. Update environment variables in the `.env` file. Wrap values that may contain non-alphanumeric characters with quotes, or they may be incorrectly parsed.
 
 - Database variables
@@ -86,7 +87,7 @@ Much of the philosophy behind Bedrock is inspired by the [Twelve-Factor App](htt
   - Generate with [wp-cli-dotenv-command](https://github.com/aaemnnosttv/wp-cli-dotenv-command)
   - Generate with [our WordPress salts generator](https://roots.io/salts.html)
 
-3. Add theme(s) in `web/app/themes/` as you would for a normal WordPress site
+3. Go into sage theme at `web/app/themes/sage` and follow the theme installation instruction from the README file
 4. Set the document root on your webserver to Bedrock's `web` folder: `/path/to/site/web/`
 5. Access WordPress admin at `https://example.com/wp/wp-admin/`
 
